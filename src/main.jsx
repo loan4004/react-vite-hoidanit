@@ -5,27 +5,32 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import RegisterPage from './pages/register.jsx';
+import LoginPage from './pages/login.jsx'
+import UserPage from './pages/user.jsx'
+import ProductPage from './pages/product.jsx'
+import './styles/global.css'
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/",           // duong link url
     element: <App />,
   },
   {
     path: "/login",
-    element: <div>login page</div>
+    element: <LoginPage />
   },
   {
     path: "/register",
-    element: <div>register page</div>
+    element: < RegisterPage />
   },
   {
     path: "/users",
-    element: <div>users page</div>
+    element: < UserPage />
   },
   {
     path: "/products",
-    element: <div>products page</div>
+    element: < ProductPage />
   }
 
 ]);
