@@ -5,9 +5,9 @@ const Header = () => {
     //anchor
     return (
         <ul>
-            <li><NavLink class="active" to="/">Home</NavLink></li>
+            <li><NavLink to="/">Home</NavLink></li>
             <li><NavLink to="/users">Users</NavLink></li>
-            <li><NavLink to="/products">Products</NavLink></li>
+            <li><NavLink to="/books">Books </NavLink></li>
         </ul>
 
     )
